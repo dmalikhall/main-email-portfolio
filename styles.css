@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F8F8F8;
+    font-family: 'Merriweather', serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+
+    position: relative;
+
+}
+
+nav {
+    background-color: #fff;
+    z-index: 1;
+    width: 80%;
+    max-width: 300px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+nav a {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav a {
+    width: 50px;
+    text-align: center;
+}
+
+
+nav a:hover {
+    color: #f0a04b;
+}
+
+nav .link-btn i {
+    font-size: 30px;
+}
+
+.hero-section {
+    background-image: url(/email-portfolio/images/leone-venter-VieM9BdZKFo-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+
+
+
+.hero-section .the-content {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+
+.the-content .intro {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+}
+
+
+
+.intro .hello {
+    color: #f0a04b;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.intro .name {
+    color: #000;
+    font-size: 4rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.intro .job {
+    color: #f6c453;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.intro .description {
+    font-size: 1.2rem;
+    color: #183a1d;
+    letter-spacing: 1px;
+}
+
+
+.skills-container {
+    padding-top: 60px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 60px;
+    background-color: #F8F8F8;
+
+
+}
+
+
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skills-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+
+
+}
+
+
+.skill-icon {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 270px;
+}
+
+.skill-icon h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: .5px;
+    text-align: center;
+}
+
+.icon-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.icon-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-me-section {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.image-paragraph-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.image-paragraph-container .my-image {
+    width: 50%;
+    height: 550px;
+}
+
+.image-paragraph-container .my-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.image-paragraph-container .paragraph {
+    width: 40%;
+}
+
+.image-paragraph-container .paragraph h3 {
+    color: #f6c453;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-weight: 300;
+}
+
+.image-paragraph-container .paragraph h1 {
+    color: #183a1d;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.image-paragraph-container .paragraph p {
+    color: #838383;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+.portfoilio-section {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    padding-top: 60px;
+    background-color: #fff;
+
+
+}
+
+.portfoilio-section h1 {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.project {
+    width: fit-content;
+}
+
+
+.project-image {
+    width: 100%;
+    max-width: 270px;
+
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project p {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: .5px;
+    margin-bottom: 10px;
+}
+
+.project .small-title {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0px;
+    color: #838383;
+}
+
+footer {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    padding-top: 60px;
+    background-color: #F8F8F8;
+}
+
+@media screen and (max-width:1050px) {
+    .image-paragraph-container {
+        display: block;
+    }
+
+    .image-paragraph-container .my-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+
+        height: 375px;
+    }
+
+    .image-paragraph-container .my-image img {
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .image-paragraph-container .paragraph {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-paragraph-container .paragraph h3 {
+        margin-top: 30px;
+    }
+
+
+}
+
+@media screen and (max-width:800px) {
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .intro .hello {
+        font-size: 1.5rem;
+    }
+
+    .intro .name {
+        font-size: 4rem;
+    }
+
+    .intro .job {
+
+        font-size: 1.875rem;
+
+    }
+
+    .intro .description {
+        font-size: 1rem;
+
+    }
+
+
+
+}
+
+@media screen and (max-width:625px) {
+    .the-content .intro {
+        left: 50%;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .skills {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .the-content .intro {
+        left: 50%;
+    }
+
+    .image-paragraph-container .paragraph h1 {
+        font-size: 1.8rem;
+
+
+    }
+
+    .image-paragraph-container .paragraph p {
+        font-size: .975rem;
+
+    }
+
+}
