@@ -13,6 +13,7 @@ html {
 
 body {
     background-color: #F8F8F8;
+    
     font-family: 'Merriweather', serif;
 
 }
@@ -24,8 +25,10 @@ a {
 }
 
 .container {
-
     position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 }
 
